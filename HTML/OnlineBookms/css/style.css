@@ -1,0 +1,95 @@
+/* External CSS */
+/* Element(tag) Selector */
+p{
+    /* background-color: beige; */
+    color: brown;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* ID Selector */
+#main_body 
+{
+    background-color: cadetblue;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+/* Class Selector */
+.head_class{
+    background-color: rgb(146, 244, 220);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+/* Group Selector */
+/* Element group Selector */
+h1, h2, h3, h4
+{
+    color: rgb(4, 98, 180);
+}
+/* id group Selector */
+#main_body, data, form
+{
+    color: antiquewhite;
+}
+/* Child Selector */
+/* Many child element can apply */
+div p
+{
+    background-color: rgb(149, 165, 42);
+
+}
+
+/* Child Selector */
+/* only One child element can apply */
+div>p
+{
+    background-color: rgb(42, 165, 61);
+}
+
+/* Universal Selector */
+/* * {
+    background-color: rgb(242, 195, 195);
+} */
+
+input[type="text"],
+input[type="password"]
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    height: 40px;
+    width: 300px;
+    border: 1px;
+    border-radius: 25px;
+    color: rgb(47, 128, 15);
+    background-color: azure;
+}
+
+/* Box Selector */
+#idsection {
+    background-color: rgb(166, 194, 245);
+    border: 3px solid rgb(34, 114, 5);
+    border-radius: 25px;
+    padding: 20px;
+    margin-left: 30%;
+    width: 400px;
+    height: 800px;
+    text-align: center;
+}
+
+
+#isection {
+    background-color: rgb(166, 194, 245);
+    border: 3px solid rgb(34, 114, 5);
+    border-radius: 25px;
+    padding: 20px;
+    margin-left: 30%;
+    width: 400px;
+    height: 800px;
+    text-align: center;
+}

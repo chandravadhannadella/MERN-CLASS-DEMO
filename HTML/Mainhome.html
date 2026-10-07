@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Main Home</title>
+    <style>
+      
+        .box_container {
+            background: #8ae257;
+            border: 1px solid rgb(101, 205, 4);
+            border-radius: 15px;
+            margin: 5px;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            /* column-reverse, row-reverse, column, row */
+        }
+        .box {
+            background: #b68de7;
+            text-align: center;
+            border: 2px solid goldenrod;
+            border-radius: 15px;
+            padding: 10px;
+            margin: 5px;
+        }
+        .grid_container {
+            background-color: rgb(252, 68, 102);
+            border: 1px solid rgb(101, 205, 4);
+            border-radius: 15px;
+            margin: 5px;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+
+        }
+        .grid_box {
+            background: #b68de7;
+            text-align: center;
+            border: 2px solid goldenrod;
+            border-radius: 15px;
+            padding: 10px;
+            margin: 5px;
+          
+        }
+
+        @media (max-width: 786px){
+        .grid_container{
+            grid-template-columns: repeat(1, 1fr);
+            gap:10px;
+        }
+        .box_container{
+            flex-direction: column;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Welcome to Vignan</h1>
+    <div class = "box_container">
+        <div class="box"> Home</div>
+        <div class="box"> About Us</div>
+        <div class="box"> Service</div>
+        <div class="box"> Portals</div>
+    </div>
+    <div class="grid_container">
+        <div class="grid_box">Grid-Box-1</div>
+        <div class="grid_box">Grid-Box-2</div>
+        <div class="grid_box">Grid-Box-3</div>
+        <div class="grid_box">Grid-Box-4</div>
+        <div class="grid_box">Grid-Box-5</div>
+        <div class="grid_box">Grid-Box-6</div>
+        <div class="grid_box">Grid-Box-7</div>
+        
+    </div>
+    
+</body>
+</html>

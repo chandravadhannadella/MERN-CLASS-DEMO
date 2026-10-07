@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Java Script</title>
+</head>
+<body>
+    <h1 id="title">AIML C</h1>
+    <button id="btn">Click Me</button>
+
+    <button id="DBbtn">DB Click Me</button>
+    <p id="output"></p>
+<!-- Key Events -->
+    <input type="text" id="text" placeholder="Enter the text">
+    <p id="textoutput"></p>
+
+    <input type="text" id="textpress" placeholder="Enter the text">
+    <p id="toutput"></p>
+
+    <input type="text" id="textele" placeholder="Enter the text">
+    <ul id="ulist"></ul>
+
+</body>
+<script>
+        
+
+
+    
+        // // 1. var keyword
+        // var A=10; // number
+        // console.log("A value: "+A);
+        // //replace the value
+        // var A = "Welcome to AIML C";
+        // console.log("A value: "+A);
+
+        // //reuseable
+        // A=100.23; 
+        // console.log("A value: "+A);
+
+        // // let Keyword
+        // let B = 100;   
+        // console.log("B value3: "+B);
+        // B = "String";
+        // console.log("B value2: "+B);
+        // B = 100.4544;
+        // console.log("B value3: "+B);
+        // // const keyword
+        // const C = 100;    //cannot be modified
+        // console.log("C value3: "+C);
+        // //Non Primitive Data type
+        // let Student={
+        //     name: "Sai",
+        //     Roll:101,
+        //     Dept:"AIMLC"
+        // }
+        // console.log(Student.name)
+        // //Arrays
+        // const Array=[10,19,18,17]
+        // console.log(Array[2])
+        // //1. Function without Parameters
+        // //syntax
+        // /* 
+        // function FunctionName()
+        // {
+        //     statements;
+        // }
+        // FunctionName() //Calling Function 
+        // */
+        // function Display()
+        // {
+        //     console.log("Welcome to AIML C");
+        // }
+        // Display()
+        // //2. Function with Parameters
+        // //syntax
+        // /* 
+        // function FunctionName(Para, Para2)
+        // {
+        //     statements;
+        // }
+        // FunctionName(p1, p2) //Calling Function 
+        // */
+        // function Show(V1, V2)
+        // {
+        //     console.log("V1: "+V1);
+        //     console.log("V2: "+V2);
+        //     console.log("V: "+(V2+V1) );
+        // }
+        // Show(10,20)
+        // //3. Function Expression 
+        // const Stud = function(V1,V2) {
+        //     var a=V1+V2;
+        //     return a;
+        // }
+        // console.log(Stud(10,10));
+        // //Arrow Function 
+        // const Square = (n) => n*n ;
+        // console.log(Square(4));
+
+        // const data = (a,b,c) => a+b*c;
+        // console.log(data(10, 2, 8));
+
+       
+        let title = document.getElementById("title");
+        let btn = document.getElementById("btn");
+        btn.addEventListener("click", function(){
+
+         
+            console.log(title.innerHTML);
+            title.textContent = "Welcome to AIML C";
+            title.style.color = "green";
+
+        });
+
+        let db_btn = document.getElementById("DBbtn");
+        let output = document.getElementById("output");
+        db_btn.addEventListener("dblclick", function(){
+            output.textContent="Button on Double Clicked!";
+        });
+
+        db_btn.addEventListener("mouseenter", function(){
+            db_btn.style.backgroundColor="Green";
+            db_btn.style.fontSize = "20px";
+            db_btn.style.color="white";
+        });
+
+        db_btn.addEventListener("mouseout", function(){
+            db_btn.style.backgroundColor="gray";
+            db_btn.style.fontSize = "10px";
+            db_btn.style.color="Black";
+        });
+        let text =document.getElementById("text");
+        let textoutput =document.getElementById("textoutput");
+        text.addEventListener("keydown", function(event){
+        textoutput.textContent = "Key : "+event.key;
+        // textoutput.textContent = "Key : "+text.value;
+    });
+
+        let textpress =document.getElementById("textpress");
+        let toutput = document.getElementById("toutput");
+        textpress.addEventListener("keyup", function(){
+        toutput.textContent = "Key : "+textpress.value;
+    });
+
+    let textele = document.getElementById("textele");
+        let ulist = document.getElementById("ulist");
+        textele.addEventListener("keyup", function(event){
+            // Creating element
+            let li = document.createElement("li");
+            // Assign
+            li.textContent=event.key;
+            // Append to UL
+            ulist.appendChild(li);
+            // remove element
+            // li.remove();
+
+    });
+
+        
+    </script>
+</html>

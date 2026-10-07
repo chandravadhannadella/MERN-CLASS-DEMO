@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <title>
+                Jquery - AIML - C
+        </title>
+        <script src="jquery-4.0.0.min.js"></script>
+    </head>
+    <body>
+        <h1 id="title">AIML</h1>
+        <h2 class="subtitle">AIML</h2>
+        <h3>AIML</h3>
+        
+        <button id="btn"> Click Me</button>
+        <p id="output"></p>
+        <br>
+
+        <button id="btn_bd">DB Click Me</button>
+        <p id="output_bd"></p>
+
+        <style>
+            .Box, .bhide{
+                padding: 20px;
+                background-color: rgb(2, 228, 104);
+                border-radius: 15px;
+                box-shadow: 3px;
+                width: 100px;
+                height: 100px;
+            }
+
+            .fade{
+                padding: 20px;
+                background-color: rgb(228, 187, 2);
+                border-radius: 15px;
+                box-shadow: 3px;
+                width: 100px;
+                height: 100px;
+            }
+        </style>
+        <div class="Box"> </div>   <br><br>
+
+        <div class="bhide"> </div>
+        <button id="btn_hide">Hide</button>
+        <button id="btn_show">Show</button>
+        <button id="btn_tog">Hide/Show</button>
+
+
+
+        <br> <br>
+
+        <div class="fade"> </div>
+        <button id="btn_fout">fadeOut</button>
+        <button id="btn_fin">fadein</button>
+        
+        <button id="btn_fade">fadein/fadeOut</button>
+
+    </body>
+    <script>
+        // $(selector).Action();
+        // Effects
+        $("#btn_fade").click(function(){
+            $(".fade").fadeToggle();
+        });
+        $("#btn_fout").click(function(){
+            $(".fade").fadeOut();
+        });
+
+        $("#btn_fin").click(function(){
+            $(".fade").fadeIn();
+        });
+
+
+
+        $("#btn_tog").click(function(){
+            $(".bhide").toggle();
+        });
+
+        
+        $("#btn_show").click(function(){
+            $(".bhide").show();
+        });
+
+
+        $("#btn_hide").click(function(){
+            $(".bhide").hide();
+        });
+
+
+
+        $(".Box").mouseenter(function(){
+            $(this).css("background-color","green");                                   // this -> used to retrive the current selector
+        });
+
+        $(".Box").mouseout(function(){
+            $(this).css("background-color","red");
+        });
+
+
+
+
+
+        $("#title").text(" Welcome to VIGNAN - AIML - C");
+       // $(".subtitle").text(" Welcome to VIGNAN - <i>AIML - C</i>");
+
+        $(".subtitle").html(" Welcome to VIGNAN - <i>AIML - C</i>");
+        $("h3").text("Aiml - C - Vignan");
+
+
+    $("#btn").click(function(){
+        $("#output").text("Button On Clicked!");
+        alert("Button On Clicked !");
+    });
+
+    $("#btn_bd").dblclick(function(){
+        $("#output_bd").text("DB Button On Clicked!");
+        alert("DB Button On Clicked !");
+    });
+
+
+
+    </script>
+</html>

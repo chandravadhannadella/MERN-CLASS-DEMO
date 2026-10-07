@@ -1,0 +1,122 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(114, 228, 228);
+    margin: 0px;
+    padding: 0px;
+}
+header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(237, 157, 243);
+    text-align: center;
+    padding: 20px;
+}
+header h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(75, 121, 29);
+    font-size: 50px;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+header p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(241, 246, 249);
+    font-size: 10px;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    background-color: #0b603b;
+    text-align: center;
+    padding: 10px;
+
+}
+
+nav a{
+    color: aliceblue;
+    text-decoration: none;
+    margin: 15px;
+    margin: 6px;
+    background-color: rgb(134, 98, 36);
+    border: 1px solid beige;
+}
+nav a:hover {
+    color: greenyellow;
+}
+
+section 
+{
+    width: 30%;
+    margin: 20px auto;
+    background-color: rgb(230, 230, 240);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 2px;
+}
+section h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(115, 70, 6);
+}
+
+section form {
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    color: rgb(188, 82, 7);
+    border: 1px solid rgb(11, 11, 11);
+    border-radius: 10px;
+}
+section label{
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 15px;
+    font-style: italic;
+}
+section input, select, textarea {
+    width: 80%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+    font-size: 15px;
+    color: #3b603b;
+    border: 1px solid gainsboro;
+    border-radius:5px;
+}
+
+section input[type="submit"]
+{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background-color: bisque;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+    font-size: 15px;
+    color: #3b603b;
+    border: 1px solid gainsboro;
+    border-radius:5px;
+}
+
+section input[type="submit"]:hover
+{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background-color: green;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+    font-size: 15px;
+    color: #3b603b;
+    border: 1px solid gainsboro;
+    border-radius:5px;
+}
+
+
+
+footer {
+    background-color: #cfe7cf;
+    padding: 5px;
+    text-align: center;
+}

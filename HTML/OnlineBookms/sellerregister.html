@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Online Book Store Management System</title>
+        <link rel="stylesheet" href="css/Newstyle.css">
+    </head>
+    <body>
+        <main>
+            <header>
+                <center>
+                <h1>Online Book Store Management System</h1> <br>
+                    <p>
+                        <b>
+                            <i>
+                                BuyBook App
+                            </i>
+                        </b>
+                    </p>
+                </center>
+            </header>
+            <!-- Navigation Menu -->
+             <center>
+             <nav>
+                <a href="home.html">Home</a>
+                <a href="admin.html">Admin</a>
+                <a href="seller.html">Seller</a>
+                <a href="buyer.html">Buyer</a>
+             </nav>
+             </center>
+            
+             <section id="idsection">
+                
+                    <h3>Seller Register Here...</h3>
+                    <form action="#" method = "post">
+                        <label for="SellerName">Seller Name: </label>
+                        <input type="text" 
+                                id="Sellername" 
+                                name="Sellername" 
+                                placeholder="Enter the Seller Name" required> <br> <br>
+                        <label for="EmailID">Seller Email ID: </label>
+                        <input type="email" 
+                                id="email" 
+                                name="Seller_email" 
+                                placeholder="Enter the email" required> <br> <br>
+                        <label for="Password">Password</label>
+                        <input type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Enter the Seller Password" required> <br> <br>
+                        <label for="seller_pho">Phone Number</label>
+                        <input type="tel" id="sell_phone" name="seller_phone" required placeholder="enter phone number"> <br> <br>
+
+                        <label for="Address">Address</label>
+                        <textarea name="address" id="address" placeholder="Enter address"></textarea> <br> <br>
+
+                        <label for="Aadhar">Aadhar Number</label>
+                        <input type="text" id="aadhar" name="aadhar" required placeholder="enter aadhar number"> <br> <br>
+
+                        <label for="PAN">PanCard Number</label>
+                        <input type="text" id="pan_card" name="pan_number" required placeholder="enter PanCard number"> <br> <br>
+
+                        <label for="GST number">GST Number</label>
+                        <input type="text" id="GST" name="GST_no" required placeholder="enter GST number"> <br> <br>
+
+
+
+
+                        <label for="image">Upload Shope Image</label>
+                        <input type="file" id="image" name="image" required> <br> <br>
+
+                        <label for="person_image">Upload Person Image</label>
+                        <input type="file" id="person_img" name="person_image" required> <br> <br>
+
+                        <label for="image">Upload Shope Documents</label> 
+                        <input type="file" id="Documents" name="Documents" required>  <br> <br>
+                        <input type="submit" id="login" name="Seller Register" value="Seller Register">                        
+                    </form>
+                
+
+             </section>
+             
+        </main>
+    </body>
+</html>

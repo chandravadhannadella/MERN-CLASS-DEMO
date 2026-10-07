@@ -1,0 +1,17 @@
+{
+  "name": "onlinebook",
+  "version": "1.0.0",
+  "description": "its a Online Book Store Management System",
+  "main": "ProjectApp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ProjectApp.js"
+  },
+  "keywords": [],
+  "author": "Bharath Sai Ram",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
